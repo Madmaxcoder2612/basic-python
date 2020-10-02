@@ -1,25 +1,33 @@
 #if-elif-else
 #1 students marks
-marks=int(input("enter the marks:"))
-if 90<marks<=100:
-    print("first grades")
-elif 80<marks<=90:
-    print("second grades")
-elif 70<marks<=80:
-    print("third grades")
-elif 33<marks<=70:
-    print("pass")
-else:
-    print("fail")
+
+try :
+    marks = float(input("Enter the marks:"))
+    if 90<marks<=100:
+        print("first grades")
+    elif 80<marks<=90:
+        print("second grades")
+    elif 70<marks<=80:
+        print("third grades")
+    elif 33<marks<=70:
+         print("pass")
+    else:
+        print("fail")
+except :
+    print("Invalid input")
 #2 greatest among two number
-n1=int(input("enter first number:"))
-n2=int(input("enter second number:"))
-if n1>n2:
-    print("n1 is greatest")
-elif n2>n1:
-    print("n2 is greatest")
-else:
-    print("both number are equal")
+
+try:
+      n1 = int(input("enter first number:"))
+      n2 = int(input("enter second number:"))
+      if n1 > n2:
+          print("n1 is greatest")
+      elif n2 > n1:
+          print("n2 is greatest")
+      else:
+          print("both number are equal")
+except:
+    print("Invalid Input")
 
 #3 greatest among three number
 n1=int(input("enter first number:"))
